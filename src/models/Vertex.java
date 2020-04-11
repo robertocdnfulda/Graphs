@@ -2,17 +2,35 @@ package models;
 
 public class Vertex {
 
-    private int id;
+    private int vertex;
+    private int distance;
+    private int previous;
 
-    public Vertex(int id) {
-        this.id = id;
+    public Vertex(int vertex) {
+        this.vertex = vertex;
     }
 
-    public int getId() {
-        return id;
+    public int getVertex() {
+        return vertex;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public void setVertex(int vertex) {
+        this.vertex = vertex;
+    }
+
+    public int getDistance() {
+        return distance;
+    }
+
+    public void setDistance(int distance) {
+        this.distance = distance;
+    }
+
+    public int getPrevious() {
+        return previous;
+    }
+
+    public void setPrevious(int previous) {
+        this.previous = previous;
     }
 }

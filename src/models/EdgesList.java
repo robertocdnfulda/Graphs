@@ -4,21 +4,14 @@ import java.util.ArrayList;
 
 public class EdgesList {
 
-    private ArrayList<Edge> kanten;
+    private ArrayList<Edge> edges;
 
-    public EdgesList() {
-        kanten = new ArrayList<Edge>();
+    public EdgesList(Graph graph) {
+        edges = new ArrayList<Edge>();
     }
 
-    public ArrayList<Edge> getKanten() {
-        return kanten;
+    public ArrayList<Edge> getEdges() {
+        return edges;
     }
 
-    public void setKanten(ArrayList<Edge> kanten) {
-        this.kanten = kanten;
-    }
-
-    public void addKante(Edge edge) {
-        kanten.add(edge);
-    }
 }

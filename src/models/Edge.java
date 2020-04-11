@@ -2,22 +2,22 @@ package models;
 
 public class Edge {
 
-    private Vertex vertex1;
+    private int vertex1;
 
-    private Vertex vertex2;
+    private int vertex2;
 
     private int weight;
 
-    public Edge(int knoten1, int knoten2) {
-        this.vertex1 = new Vertex(knoten1);
-        this.vertex2 = new Vertex(knoten2);
+    public Edge(int vertex1, int vertex2) {
+        this.vertex1 = vertex1;
+        this.vertex2 = vertex2;
     }
 
-    public Vertex getVertex1() {
+    public int getVertex1() {
         return vertex1;
     }
 
-    public Vertex getVertex2() {
+    public int getVertex2() {
         return vertex2;
     }
 

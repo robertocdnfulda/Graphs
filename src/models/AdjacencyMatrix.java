@@ -7,8 +7,41 @@ public class AdjacencyMatrix {
 
     private HashMap<Integer, ArrayList<HashMap<Integer, Integer>>> matrix;
 
-    public AdjacencyMatrix() {
+    public AdjacencyMatrix(Graph graph) {
+        init(graph);
+        build(graph);
+    }
+
+    private void init(Graph graph) {
         matrix = new HashMap<Integer, ArrayList<HashMap<Integer, Integer>>>();
+
+        for (int i = 1; i <= graph.getNumberOfVertices(); i++) {
+
+            ArrayList<HashMap<Integer, Integer>> verticesValues = new ArrayList<HashMap<Integer, Integer>>();
+
+            for (int j = 1; j <= graph.getNumberOfVertices(); j++) {
+                HashMap<Integer, Integer> hm = new HashMap<Integer, Integer>();
+                hm.put(j, 0);
+                verticesValues.add(hm);
+            }
+
+            matrix.put(i, verticesValues);
+        }
+    }
+
+    private void build(Graph graph) {
+        for (Edge edge: graph.getEdges()) {
+            for(HashMap<Integer, Integer> hm : matrix.get(edge.getVertex1())) {
+                if (hm.containsKey(edge.getVertex2())) {
+                    hm.replace(edge.getVertex2(), 1);
+                }
+            }
+            for(HashMap<Integer, Integer> hm : matrix.get(edge.getVertex2())) {
+                if (hm.containsKey(edge.getVertex1())) {
+                    hm.replace(edge.getVertex1(), 1);
+                }
+            }
+        }
     }
 
     public HashMap<Integer, ArrayList<HashMap<Integer, Integer>>> getMatrix() {
@@ -19,33 +52,33 @@ public class AdjacencyMatrix {
         this.matrix = matrix;
     }
 
-    public void addKnotenRow(Integer knoten, ArrayList<HashMap<Integer, Integer>> knoten2) {
-        if (matrix.get(knoten) == null) {
-            matrix.put(knoten, knoten2);
+    public void addvertexRow(Integer vertex, ArrayList<HashMap<Integer, Integer>> vertex2) {
+        if (matrix.get(vertex) == null) {
+            matrix.put(vertex, vertex2);
         }
     }
 
-    public void addKnoten2ToKnoten(Integer knoten, Integer knoten2, int value) {
-        ArrayList<HashMap<Integer, Integer>> knotenList;
+    public void addvertex2Tovertex(Integer vertex, Integer vertex2, int value) {
+        ArrayList<HashMap<Integer, Integer>> vertexList;
 
-        knotenList = matrix.get(knoten);
+        vertexList = matrix.get(vertex);
 
-        if (knotenList != null) {
+        if (vertexList != null) {
 
-            if (!containsKnoten(knotenList, knoten2)) {
-                HashMap<Integer, Integer> knotenValueHash = new HashMap<Integer, Integer>();
+            if (!containsvertex(vertexList, vertex2)) {
+                HashMap<Integer, Integer> vertexValueHash = new HashMap<Integer, Integer>();
 
-                knotenValueHash.put(knoten2, value);
+                vertexValueHash.put(vertex2, value);
 
-                knotenList.add(knotenValueHash);
+                vertexList.add(vertexValueHash);
             }
         }
     }
 
-    private boolean containsKnoten (ArrayList<HashMap<Integer, Integer>> list ,Integer knoten2) {
+    private boolean containsvertex (ArrayList<HashMap<Integer, Integer>> list ,Integer vertex2) {
 
         for(HashMap<Integer, Integer> obj: list) {
-            if(obj.get(knoten2) != null) {
+            if(obj.get(vertex2) != null) {
                 return true;
             }
         }

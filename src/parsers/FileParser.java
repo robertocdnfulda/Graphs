@@ -1,13 +1,11 @@
-package parser;
+package parsers;
 
 import models.Edge;
 import models.Graph;
 
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileReader;
-import java.io.IOException;
+import java.io.*;
 import java.util.ArrayList;
+import java.util.Date;
 
 public class FileParser {
 
@@ -17,6 +15,10 @@ public class FileParser {
         boolean firstRow = true;
         ArrayList<Edge> edges = new ArrayList<Edge>();
         Graph graph = new Graph();
+
+        String[] graphName = path.split("/");
+        int splitName = graphName.length - 1;
+        graph.setName(graphName[splitName].replace(".txt", ""));
 
         try {
             File file = new File(path);
@@ -48,11 +50,38 @@ public class FileParser {
 
             graph.setEdges(edges);
 
+
+
         } catch (IOException e) {
             System.out.println(e);
         } finally {
             return graph;
         }
 
+    }
+
+    public static void toDot(Graph graph) {
+        try {
+            Date date = new Date();
+
+            FileWriter writer = new FileWriter("output/" + graph.getName() + "_" + date.getTime() + ".dot");
+
+            writer.write("digraph " + graph.getName() + " { ");
+
+            for (int vertices = 1; vertices <= graph.getNumberOfVertices(); vertices++) {
+                writer.write("  " + vertices + " [shape=circle]");
+            }
+
+            for (Edge edge: graph.getEdges()) {
+                writer.write("  " + edge.getVertex1() +  " -> " + edge.getVertex2() + " [penwidth=2, arrowhead=none]");
+            }
+
+            writer.write(" } ");
+
+            writer.close();
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 }

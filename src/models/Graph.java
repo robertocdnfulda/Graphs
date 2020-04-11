@@ -4,6 +4,8 @@ import java.util.ArrayList;
 
 public class Graph {
 
+    private String name;
+
     private int numberOfVertices;
 
     private ArrayList<Edge> edges;
@@ -26,5 +28,13 @@ public class Graph {
 
     public void setEdges(ArrayList<Edge> edges) {
         this.edges = edges;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 }
