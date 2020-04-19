@@ -45,6 +45,7 @@ public class Graphs {
             String graphName = in.nextLine();
 
             Graph graph = FileParser.toGraph(PATH + graphName);
+            FileParser.toDot(graph);
 
             int source = 0;
 
@@ -93,18 +94,6 @@ public class Graphs {
 
         } while (loop.toUpperCase().equals("Y") || loop.toUpperCase().equals("YES"));
 
-        /*
-        AdjacencyList adjazenzListe = new AdjacencyList();
-        AdjacencyMatrix adjazenzMatrix = new AdjacencyMatrix();
-        IncidenceMatrix inzidenzMatrix = new IncidenceMatrix(graph);
-        EdgesList edgesListe = new EdgesList();
-*/
-
-        //IncidenceMatrix incidenceMatrix = new IncidenceMatrix(graph);
-        //AdjacencyMatrix adjacencyMatrix = new AdjacencyMatrix(graph);
-        //AdjacencyList adjacencyList = new AdjacencyList(graph);
-
-        //FileParser.toDot(graph);
     }
 
 }

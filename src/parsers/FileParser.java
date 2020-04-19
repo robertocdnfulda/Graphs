@@ -82,7 +82,7 @@ public class FileParser {
             }
 
             for (Edge edge: graph.getEdges()) {
-                writer.write("  " + edge.getVertex1() +  " -> " + edge.getVertex2() + " [penwidth=2, arrowhead=none]");
+                writer.write("  " + edge.getVertex1().getVertex() +  " -> " + edge.getVertex2().getVertex() + " [penwidth=2, arrowhead=none]");
             }
 
             writer.write(" } ");
