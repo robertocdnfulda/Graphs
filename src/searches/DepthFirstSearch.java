@@ -14,7 +14,7 @@ public class DepthFirstSearch {
 
     public static void search(Graph graph, Vertex source) {
         AdjacencyList adjacencyList = new AdjacencyList(graph);
-        searchDFS(source, adjacencyList);
+        search(source, adjacencyList);
 
         System.out.println("--- TopSort ---");
         for(Vertex vertex: list) {
@@ -24,7 +24,7 @@ public class DepthFirstSearch {
         }
     }
 
-    private static void searchDFS(Vertex vertex, AdjacencyList adjacencyList) {
+    private static void search(Vertex vertex, AdjacencyList adjacencyList) {
         vertex.setVisited(true);
         time++;
         vertex.setDistance(time);
@@ -42,7 +42,7 @@ public class DepthFirstSearch {
             Vertex nextVertex = i.next();
             if(!nextVertex.isVisited()) {
                 nextVertex.setPrevious(vertex);
-                searchDFS(nextVertex, adjacencyList);
+                search(nextVertex, adjacencyList);
             }
         }
         time++;
