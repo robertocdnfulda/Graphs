@@ -2,10 +2,12 @@ package parsers;
 
 import models.Edge;
 import models.Graph;
+import models.Vertex;
 
 import java.io.*;
 import java.util.ArrayList;
 import java.util.Date;
+import java.util.HashMap;
 
 public class FileParser {
 
@@ -26,26 +28,33 @@ public class FileParser {
             BufferedReader br = new BufferedReader(new FileReader(file));
 
             String[] data;
+            ArrayList<Vertex> vertices = new ArrayList<Vertex>();
 
             while ((st = br.readLine()) != null) {
+                if(st.length() > 0) {
+                    if (firstRow == true) {
+                        graph.setNumberOfVertices(Integer.parseInt(st.trim()));
 
-                if(firstRow == true) {
-                    graph.setNumberOfVertices(Integer.parseInt(st.trim()));
-                    firstRow = false;
-                } else {
-                    data = st.split("\\s+");
-                    Edge edge;
+                        for (int i = 1; i <= Integer.parseInt(st.trim()); i++) {
+                            vertices.add(new Vertex(i));
+                        }
 
-                    if(data.length == 3) {
-                        edge = new Edge(Integer.parseInt(data[0]), Integer.parseInt(data[2]));
-                        edge.setWeight(Integer.parseInt(data[1]));
+                        graph.setVertices(vertices);
+
+                        firstRow = false;
                     } else {
-                        edge = new Edge(Integer.parseInt(data[0]), Integer.parseInt(data[1]));
+                        data = st.split("\\s+");
+                        Edge edge;
+
+                        if (data.length == 3) {
+                            edge = new Edge(vertices.get(Integer.parseInt(data[0]) - 1), vertices.get(Integer.parseInt(data[2]) - 1));
+                            edge.setWeight(Integer.parseInt(data[1]));
+                        } else {
+                            edge = new Edge(vertices.get(Integer.parseInt(data[0]) - 1), vertices.get(Integer.parseInt(data[1]) - 1));
+                        }
+                        edges.add(edge);
                     }
-
-                    edges.add(edge);
                 }
-
             }
 
             graph.setEdges(edges);

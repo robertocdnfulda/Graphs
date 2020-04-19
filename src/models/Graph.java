@@ -10,12 +10,22 @@ public class Graph {
 
     private ArrayList<Edge> edges;
 
+    private ArrayList<Vertex> vertices;
+
     public int getNumberOfVertices() {
         return numberOfVertices;
     }
 
     public void setNumberOfVertices(int numberOfVertices) {
         this.numberOfVertices = numberOfVertices;
+    }
+
+    public void setVertices(ArrayList<Vertex> vertices) {
+        this.vertices = vertices;
+    }
+
+    public ArrayList<Vertex> getVertices() {
+        return vertices;
     }
 
     public int getNumberOfEdges() {

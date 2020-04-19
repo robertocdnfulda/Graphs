@@ -2,56 +2,59 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6882517b-953e-4b57-9d85-5bd183484d90" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/graphs/FloydWarshall.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/graphs/bellmannford.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/graphs/dijkstra.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/graphs/grid.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/graphs/k3_3.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/graphs/ladder.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/graphs/petersen.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/graphs/primkruskal.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/graphs/spider.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Graphs/META-INF/Graphs.kotlin_module" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Graphs/models/AdjacencyListVertice.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Graphs/models/Vertices.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Graphs/parsers/AdjacencyListParser.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Graphs/parsers/AdjacencyMatrixParser.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Graphs/parsers/FileParser.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Graphs/parsers/IncidenceMatrixParser.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Graphs/searches/BreadthFirstSearch.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/output/k5_1586631295881.dot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/AdjacencyListVertice.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/Vertices.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/parsers/AdjacencyListParser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/parsers/AdjacencyMatrixParser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/parsers/IncidenceMatrixParser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/searches/BreadthFirstSearch.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/searches/DepthFirstSearch.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/AdjacencyEdgeList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/searches/BellmannFord.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/searches/Dijkstra.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/searches/FloydWarshall.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/searches/Kruskal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/searches/Prim.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Graphs/Graphs.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Graphs/Graphs.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Graphs/models/AdjacencyList.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Graphs/models/AdjacencyList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Graphs/models/AdjacencyListVertice.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Graphs/models/AdjacencyMatrix.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Graphs/models/AdjacencyMatrix.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Graphs/models/Edge.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Graphs/models/Edge.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Graphs/models/EdgesList.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Graphs/models/EdgesList.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Graphs/models/Graph.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Graphs/models/Graph.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Graphs/models/IncidenceMatrix.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Graphs/models/IncidenceMatrix.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Graphs/models/Vertex.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Graphs/parser/FileParser.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Graphs/models/Vertices.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Graphs/parsers/AdjacencyListParser.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Graphs/parsers/AdjacencyMatrixParser.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Graphs/parsers/FileParser.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Graphs/parsers/FileParser.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Graphs/parsers/IncidenceMatrixParser.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Graphs/searches/BreadthFirstSearch.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Graphs/searches/BreadthFirstSearch.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Graphs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Graphs.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/models/AdjacencyList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/AdjacencyList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/AdjacencyListVertice.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/models/AdjacencyMatrix.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/AdjacencyMatrix.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/models/Edge.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/Edge.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/EdgesList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/EdgesList.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/models/Graph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/Graph.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/models/IncidenceMatrix.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/IncidenceMatrix.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/Vertex.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/parser/FileParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/parsers/FileParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/Vertex.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/Vertex.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/parsers/AdjacencyListParser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/parsers/AdjacencyMatrixParser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/parsers/FileParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/parsers/FileParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/parsers/IncidenceMatrixParser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/searches/BreadthFirstSearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/searches/BreadthFirstSearch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/searches/DepthFirstSearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/searches/DepthFirstSearch.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -77,6 +80,9 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -130,7 +136,14 @@
       <workItem from="1579172740764" duration="2157000" />
       <workItem from="1579683478659" duration="118000" />
       <workItem from="1586621549441" duration="9743000" />
-      <workItem from="1586643550264" duration="5436000" />
+      <workItem from="1586643550264" duration="10396000" />
+      <workItem from="1586706343115" duration="6015000" />
+      <workItem from="1586721107129" duration="3928000" />
+      <workItem from="1586791547109" duration="6730000" />
+      <workItem from="1586806642560" duration="6109000" />
+      <workItem from="1586899549568" duration="2626000" />
+      <workItem from="1587323563471" duration="941000" />
+      <workItem from="1587324945234" duration="1414000" />
     </task>
     <servers />
   </component>
@@ -138,67 +151,76 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="2721" y="239" width="374" height="626" key="#com.intellij.ide.util.MemberChooser" timestamp="1586649087626">
+    <state x="2646" y="310" width="524" height="484" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1586808614606">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state x="2721" y="239" width="374" height="626" key="#com.intellij.ide.util.MemberChooser/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1586649087626" />
-    <state x="776" y="310" width="424" height="484" key="FileChooserDialogImpl" timestamp="1579683594003">
-      <screen x="67" y="27" width="1853" height="1053" />
+    <state x="2646" y="310" width="524" height="484" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1586808614606" />
+    <state x="2721" y="239" width="374" height="626" key="#com.intellij.ide.util.MemberChooser" timestamp="1586653399897">
+      <screen x="1920" y="0" width="1920" height="1080" />
     </state>
+    <state x="2721" y="239" width="374" height="626" key="#com.intellij.ide.util.MemberChooser/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1586653399897" />
+    <state x="2655" y="290" width="735" height="497" key="FileChooserDialogImpl" timestamp="1586721849829">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2655" y="290" width="735" height="497" key="FileChooserDialogImpl/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1586721849829" />
     <state x="776" y="310" width="424" height="484" key="FileChooserDialogImpl/67.27.1853.1053@67.27.1853.1053" timestamp="1579683594003" />
-    <state width="902" height="278" key="GridCell.Tab.0.bottom" timestamp="1586648398238">
+    <state width="902" height="278" key="GridCell.Tab.0.bottom" timestamp="1587326086302">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="902" height="278" key="GridCell.Tab.0.bottom/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1586648398238" />
+    <state width="902" height="278" key="GridCell.Tab.0.bottom/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1587326086302" />
     <state width="1807" height="344" key="GridCell.Tab.0.bottom/67.27.1853.1053@67.27.1853.1053" timestamp="1579174703485" />
-    <state width="902" height="278" key="GridCell.Tab.0.center" timestamp="1586648398238">
+    <state width="902" height="278" key="GridCell.Tab.0.center" timestamp="1587326086302">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="902" height="278" key="GridCell.Tab.0.center/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1586648398238" />
+    <state width="902" height="278" key="GridCell.Tab.0.center/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1587326086302" />
     <state width="1807" height="344" key="GridCell.Tab.0.center/67.27.1853.1053@67.27.1853.1053" timestamp="1579174703485" />
-    <state width="902" height="278" key="GridCell.Tab.0.left" timestamp="1586648398238">
+    <state width="902" height="278" key="GridCell.Tab.0.left" timestamp="1587326086302">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="902" height="278" key="GridCell.Tab.0.left/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1586648398238" />
+    <state width="902" height="278" key="GridCell.Tab.0.left/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1587326086302" />
     <state width="1807" height="344" key="GridCell.Tab.0.left/67.27.1853.1053@67.27.1853.1053" timestamp="1579174703485" />
-    <state width="902" height="278" key="GridCell.Tab.0.right" timestamp="1586648398238">
+    <state width="902" height="278" key="GridCell.Tab.0.right" timestamp="1587326086302">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="902" height="278" key="GridCell.Tab.0.right/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1586648398238" />
+    <state width="902" height="278" key="GridCell.Tab.0.right/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1587326086302" />
     <state width="1807" height="344" key="GridCell.Tab.0.right/67.27.1853.1053@67.27.1853.1053" timestamp="1579174703485" />
-    <state width="903" height="344" key="GridCell.Tab.1.bottom" timestamp="1586647378702">
+    <state width="903" height="344" key="GridCell.Tab.1.bottom" timestamp="1587325489706">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="903" height="344" key="GridCell.Tab.1.bottom/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1586647378702" />
+    <state width="903" height="344" key="GridCell.Tab.1.bottom/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1587325489706" />
     <state width="1807" height="344" key="GridCell.Tab.1.bottom/67.27.1853.1053@67.27.1853.1053" timestamp="1579174703486" />
-    <state width="903" height="344" key="GridCell.Tab.1.center" timestamp="1586647378702">
+    <state width="903" height="344" key="GridCell.Tab.1.center" timestamp="1587325489706">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="903" height="344" key="GridCell.Tab.1.center/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1586647378702" />
+    <state width="903" height="344" key="GridCell.Tab.1.center/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1587325489706" />
     <state width="1807" height="344" key="GridCell.Tab.1.center/67.27.1853.1053@67.27.1853.1053" timestamp="1579174703486" />
-    <state width="903" height="344" key="GridCell.Tab.1.left" timestamp="1586647378702">
+    <state width="903" height="344" key="GridCell.Tab.1.left" timestamp="1587325489706">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="903" height="344" key="GridCell.Tab.1.left/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1586647378702" />
+    <state width="903" height="344" key="GridCell.Tab.1.left/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1587325489706" />
     <state width="1807" height="344" key="GridCell.Tab.1.left/67.27.1853.1053@67.27.1853.1053" timestamp="1579174703485" />
-    <state width="903" height="344" key="GridCell.Tab.1.right" timestamp="1586647378702">
+    <state width="903" height="344" key="GridCell.Tab.1.right" timestamp="1587325489706">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="903" height="344" key="GridCell.Tab.1.right/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1586647378702" />
+    <state width="903" height="344" key="GridCell.Tab.1.right/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1587325489706" />
     <state width="1807" height="344" key="GridCell.Tab.1.right/67.27.1853.1053@67.27.1853.1053" timestamp="1579174703486" />
-    <state x="603" y="380" key="com.intellij.ide.util.TipDialog" timestamp="1586643627961">
+    <state x="2396" y="130" width="1024" height="845" key="SettingsEditor" timestamp="1586721852019">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2396" y="130" width="1024" height="845" key="SettingsEditor/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1586721852019" />
+    <state x="603" y="380" key="com.intellij.ide.util.TipDialog" timestamp="1587324949122">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="603" y="380" key="com.intellij.ide.util.TipDialog/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1586643627961" />
-    <state x="603" y="380" key="com.intellij.ide.util.TipDialog/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1586621568528" />
+    <state x="603" y="380" key="com.intellij.ide.util.TipDialog/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1587324949122" />
     <state x="649" y="380" key="com.intellij.ide.util.TipDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1579683486733" />
     <state x="2448" y="240" width="920" height="624" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1586630776133">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="2448" y="240" width="920" height="624" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1586630776133" />
-    <state x="2576" y="257" key="search.everywhere.popup" timestamp="1586646155512">
+    <state x="2576" y="257" width="672" height="678" key="search.everywhere.popup" timestamp="1586798317994">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state x="2576" y="257" key="search.everywhere.popup/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1586646155512" />
+    <state x="2576" y="257" width="672" height="678" key="search.everywhere.popup/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1586798317994" />
   </component>
 </project>

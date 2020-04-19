@@ -5,7 +5,7 @@ import java.util.HashMap;
 
 public class IncidenceMatrix {
 
-    private HashMap<Integer, ArrayList<HashMap<Edge, Integer>>> matrix;
+    private HashMap<Vertex, ArrayList<HashMap<Edge, Integer>>> matrix;
 
     public IncidenceMatrix(Graph graph) {
         init(graph);
@@ -14,7 +14,7 @@ public class IncidenceMatrix {
 
     private void init(Graph graph) {
 
-        matrix = new HashMap<Integer, ArrayList<HashMap<Edge, Integer>>>();
+        matrix = new HashMap<Vertex, ArrayList<HashMap<Edge, Integer>>>();
 
         for (int i = 1; i <= graph.getNumberOfVertices(); i++) {
 
@@ -26,7 +26,7 @@ public class IncidenceMatrix {
                 edgesValues.add(edgeValue);
             }
 
-            matrix.put(i, edgesValues);
+            matrix.put(graph.getVertices().get(i - 1), edgesValues);
         }
     }
 
@@ -45,7 +45,7 @@ public class IncidenceMatrix {
         }
     }
 
-    public HashMap<Integer, ArrayList<HashMap<Edge, Integer>>> getMatrix() {
+    public HashMap<Vertex, ArrayList<HashMap<Edge, Integer>>> getMatrix() {
         return matrix;
     }
 

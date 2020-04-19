@@ -4,10 +4,13 @@ public class Vertex {
 
     private int vertex;
     private int distance;
-    private int previous;
+    private Vertex previous;
+    private boolean visited;
+    private int finishTime;
 
     public Vertex(int vertex) {
         this.vertex = vertex;
+        this.distance = 0;
     }
 
     public int getVertex() {
@@ -26,11 +29,27 @@ public class Vertex {
         this.distance = distance;
     }
 
-    public int getPrevious() {
+    public Vertex getPrevious() {
         return previous;
     }
 
-    public void setPrevious(int previous) {
+    public void setPrevious(Vertex previous) {
         this.previous = previous;
+    }
+
+    public boolean isVisited() {
+        return visited;
+    }
+
+    public void setVisited(boolean visited) {
+        this.visited = visited;
+    }
+
+    public int getFinishTime() {
+        return finishTime;
+    }
+
+    public void setFinishTime(int finishTime) {
+        this.finishTime = finishTime;
     }
 }
